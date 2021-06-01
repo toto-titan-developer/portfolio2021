@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Wyatt's Portfolio</title>
+    <title>Wyatt Henderson</title>
     <script src="script.js" type="text/javascript" async></script>
 </head>
 <body>
@@ -160,9 +160,9 @@
             <button class="close_contact">X</button>
             <form class="form" name="contact" method="POST" data-netlify="true">
                 <label for="name">Name</label>
-                <input type="text" placeholder="Name" id="name" required>
+                <input type="text" placeholder="Name" id="name" name="name" required>
                 <label for="email">Email</label>
-                <input type="email" placeholder="Email" id="email" required>
+                <input type="email" placeholder="Email" id="email" name="email" required>
                 <label for="reason">Reason for Contact</label>
                 <select name="role[]" id="reason" onchange="checkOther()" required>
                     <option value="null" selected disabled>Select Reason</option>

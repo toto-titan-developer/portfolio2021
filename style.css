@@ -413,7 +413,7 @@ nav ul li a:active,
   border: 2px solid rgb(69, 128, 177);
   border-radius: 2px;
   width: 400px;
-  height: 500px;
+  height: 600px;
   background: rgb(50, 51, 48);
   color: white;
   margin: 0 auto;
@@ -453,7 +453,8 @@ nav ul li a:active,
   border: 2px solid rgb(69, 128, 177);
 }
 
-.form label {
+.form label,
+.form div {
   display: block;
   width: 200px;
   margin: 0 auto;
