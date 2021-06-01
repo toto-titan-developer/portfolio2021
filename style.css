@@ -453,10 +453,14 @@ nav ul li a:active,
   border: 2px solid rgb(69, 128, 177);
 }
 
-.form label,
-.form div {
+.form label {
   display: block;
   width: 200px;
+  margin: 0 auto;
+}
+
+.form div {
+  display: block;
   margin: 0 auto;
 }
 
