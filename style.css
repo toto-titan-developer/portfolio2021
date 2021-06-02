@@ -166,7 +166,7 @@ nav ul li a:active,
 }
 
 .projects_body {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .projects_gc {
@@ -181,6 +181,7 @@ nav ul li a:active,
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0 auto;
 }
 
 .projects_gc ul img {
@@ -195,6 +196,7 @@ nav ul li a:active,
 
 .project_container_img a img {
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .project_container_img a {
@@ -202,6 +204,7 @@ nav ul li a:active,
   border-radius: 10px;
   width: 300px;
   height: 300px;
+  margin: 0 auto;
 }
 .project_container_img a:hover {
   border: 5px double rgb(41, 41, 41);
@@ -235,7 +238,7 @@ nav ul li a:active,
   background: rgba(0, 0, 0, 0.7);
   color: white;
   border-radius: 2px;
-  width: 480px;
+  /* width: 480px; */
   padding: 10px 10px;
   margin-bottom: 50px;
   line-height: 30px;
@@ -490,4 +493,138 @@ nav ul li a:active,
 
 .form .other_input {
   display: none;
+}
+
+@media only screen and (max-width: 1250px) {
+  /* Global changes */
+  .header_body,
+  .about_body,
+  .projects_body,
+  .glass_body,
+  .footer_body {
+    margin: 0 10vw;
+  }
+  /* Nav Bar */
+  nav {
+    height: 100px;
+    width: 80vw;
+    top: 0;
+    left: 10vw;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  /* Projects Section*/
+  .projects_gc {
+    grid-template-columns: 500px;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  /* Footer */
+  .footer_nav,
+  .footer_links {
+    margin: 0 15vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /* Global changes */
+  .header_body,
+  .about_body,
+  .projects_body,
+  .glass_body,
+  .footer_body {
+    margin: 0 2.5vw;
+  }
+  /* Nav Bar */
+  nav {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  nav ul li {
+    margin: 0 5px;
+  }
+  nav ul li a {
+    width: 20vw;
+    font-size: 1em;
+  }
+
+  /* Header Section */
+  .profile_img {
+    margin-top: 100px;
+    width: 120px;
+    height: 120px;
+  }
+  h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 1.5em;
+    text-shadow: 1px 1px white;
+  }
+  .contact_button,
+  .resume_button {
+    width: 80px;
+    font-size: 1em;
+  }
+
+  /* About Me */
+  .about_article {
+    padding: 0 5px;
+    line-height: 20px;
+  }
+
+  /* Projetcs */
+  .projects_gc {
+    grid-template-columns: auto;
+    gap: 35px;
+  }
+  .project_container_img a img {
+    height: 200px;
+    width: 200px;
+  }
+  .project_container_img a {
+    height: 200px;
+    width: 200px;
+  }
+  .projects_gc ul img {
+    height: 25px;
+    width: 25px;
+  }
+  .project_container_text p {
+    line-height: 20px;
+  }
+
+  /* Glass Section */
+  .glass_center {
+    margin: 50px 2.5vw 0px;
+  }
+  .glass_gc {
+    width: 200px;
+  }
+  .glass_link {
+    width: 90px;
+    font-size: 1em;
+  }
+
+  /* Footer */
+  .footer_nav a {
+    width: 25vw;
+    font-size: 1em;
+  }
+  .footer_nav,
+  .footer_links {
+    font-size: 1em;
+    margin: 0 5vw;
+  }
 }
