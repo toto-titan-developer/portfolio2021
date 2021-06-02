@@ -412,6 +412,7 @@ nav ul li a:active,
 }
 
 .contact_container {
+  box-sizing: border-box;
   display: block;
   border: 2px solid rgb(69, 128, 177);
   border-radius: 2px;
@@ -495,6 +496,7 @@ nav ul li a:active,
   display: none;
 }
 
+/* Scaling */
 @media only screen and (max-width: 1250px) {
   /* Global changes */
   .header_body,
@@ -626,5 +628,19 @@ nav ul li a:active,
   .footer_links {
     font-size: 1em;
     margin: 0 5vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  /* Contact page */
+  .contact_container {
+    width: 100vw;
+    height: 400px;
+    overflow-y: scroll;
+  }
+  .close_contact {
+    position: fixed;
+    top: 105px;
+    right: 10px;
   }
 }
