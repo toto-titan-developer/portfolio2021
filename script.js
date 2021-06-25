@@ -48,7 +48,7 @@ function checkOther() {
 
 
 // Gallery Alert
-function galleryAlert() {
-  alert("Gallery Site is currently down for maintenance \nPlease Try again later");
-}
+// function galleryAlert() {
+//   alert("Gallery Site is currently down for maintenance \nPlease Try again later");
+// }
   
